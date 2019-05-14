@@ -7,9 +7,10 @@
 }
 body {
     background-color: lightgrey;
+    font-family: Arial, Geneva, sans-serif;
 }
 .wrapper {
-    padding: 0 200px;
+    padding: 0 10%;
 }
 header {
     background-color: white;
@@ -17,21 +18,102 @@ header {
     height: 80px;
     display: flex;
 }
+.menu-head-box {
+    position: relative;
+    width: calc(100% - 220px);
+}
+.menu-head {
+    position: absolute;
+    right: 0;
+}
 .menu-head li {
     background-color: steelblue;
+    display: inline-block;
+    float: left;
+}
+.menu-head li a {
+    padding: 5px 15px;
+    line-height: 35px;
+    display: block;
+}
+.menu-head li a:hover {
+    background-color: darkred;
+}
+.sub-menu{
+    display: none;
+}
+.sub-menu li {
+    float: none;
+    display: block;
+}
+.menu-head li:hover .sub-menu {
+    display: block;
+}
+main {
+    background-color: steelblue;
+}
+article, .menu-left {
+    float: left;
+}
+.clear {
+    clear: both;
 }
 .logo, .menu-left {
-    width: 200px;
-    border-right: 10px solid brown;
+    width: 220px;
 }
-.menu-left{
-    background-color: steelblue;
+.logo {
+    padding-left: 20px;
+}
+article {
+    width: calc(100% - 220px);
+    background-color: white;
+    padding: 30px 50px 30px 15px;
+}
+article, .menu-head-box {
+    border-left: 10px solid brown;
+}
+.menu-left {
+    text-align: center;
+    padding-top: 20px;
+    line-height: 25px;
 }
 a {
     color: white;
+}
+h1 {
+    padding-bottom: 10px;
+}
+p {
+    padding: 10px 0;
+    line-height: 1.3em;
+}
+h1, h2 {
     font-weight: bold;
-    font-family: Arial, Geneva, sans-serif;
 }
 .my-photos {
     display: flex;
+}
+figure {
+    padding: 5px 15px 5px 0;
+}
+figcaption, a {
+    font-weight: bold;
+    text-decoration: underline;
+}
+figcaption {
+    padding-top: 10px;
+}
+
+footer {
+    background-color: brown;
+    padding: 10px;
+    color: white;
+}
+header, main, footer {
+    min-width: 610px;
+}
+@media screen and (max-width: 750px) {
+    .wrapper {
+        padding: 0;
+    }
 }
