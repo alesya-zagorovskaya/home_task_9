@@ -12,6 +12,10 @@ body {
 .wrapper {
     padding: 0 10%;
 }
+.shadow {
+    box-shadow: 12px 0 15px -14px rgba(0, 0, 0, 0.3),
+    -12px 0 8px -14px rgba(0, 0, 0, 0.3);
+}
 header {
     background-color: white;
     border-bottom: 10px solid brown;
