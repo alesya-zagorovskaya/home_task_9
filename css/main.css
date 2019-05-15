@@ -55,26 +55,21 @@ header {
 }
 main {
     background-color: steelblue;
-}
-article, .menu-left {
-    float: left;
-}
-.clear {
-    clear: both;
+    display: flex;
 }
 .logo, .menu-left {
-    width: 220px;
+    width: 230px;
 }
 .logo {
     padding-left: 20px;
 }
 article {
-    width: calc(100% - 220px);
+    width: calc(100% - 230px);
     background-color: white;
     padding: 30px 50px 30px 15px;
 }
-article, .menu-head-box {
-    border-left: 10px solid brown;
+.logo, .menu-left {
+    border-right: 10px solid brown;
 }
 .menu-left {
     text-align: center;
