@@ -24,7 +24,7 @@ header {
 }
 .menu-head-box {
     position: relative;
-    width: calc(100% - 220px);
+    width: calc(100% - 230px);
 }
 .menu-head {
     position: absolute;
@@ -54,7 +54,6 @@ header {
     display: block;
 }
 main {
-    background-color: steelblue;
     display: flex;
 }
 .logo, .menu-left {
@@ -75,6 +74,7 @@ article {
     text-align: center;
     padding-top: 20px;
     line-height: 25px;
+    background-color: steelblue;
 }
 a {
     color: white;
